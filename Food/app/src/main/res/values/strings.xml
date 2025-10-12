@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">FoodGyan</string>
+    <string name="todo">Logo</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="default_web_client_id">834873216185-dp5cojdqvag2jkbuaisue66a33fphn19.apps.googleusercontent.com</string>
+    <string-array name="recipe_categories">
+        <item>All Categories</item>
+        <item>Beef</item>
+        <item>Chicken</item>
+        <item>Dessert</item>
+        <item>Lamb</item>
+        <item>Miscellaneous</item>
+        <item>Pasta</item>
+        <item>Pork</item>
+        <item>Seafood</item>
+        <item>Side</item>
+        <item>Starter</item>
+        <item>Vegan</item>
+        <item>Vegetarian</item>
+        <item>Breakfast</item>
+        <item>Goat</item>
+        <item>Salad</item>
+        <item>Soup</item>
+    </string-array>
+
+    <string-array name="recipe_difficulties">
+        <item>All Difficulties</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+</resources>
