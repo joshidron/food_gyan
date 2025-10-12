@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewRecipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/white"
+    android:scrollbars="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Recipe Image -->
+
+        <!-- Recipe Name -->
+        <ImageView
+            android:id="@+id/detailRecipeImage"
+            android:layout_width="323dp"
+            android:layout_height="330dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="16dp"
+            android:clipToOutline="true"
+            android:contentDescription="Recipe Image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_recipe" />
+
+        <TextView
+            android:id="@+id/detailRecipeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Callaloo Jamaican Style"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:gravity="center"
+            android:layout_marginTop="4dp" />
+
+        <!-- Recipe Category -->
+        <TextView
+            android:id="@+id/detailRecipeCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category: Miscellaneous"
+            android:textSize="16sp"
+            android:textColor="#777777"
+            android:layout_marginTop="4dp"
+            android:gravity="center" />
+
+        <!-- Chips for time & difficulty -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/detailRecipeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏱️ Time: 30 mins"
+                android:textColor="#FF6B35"
+                android:textSize="13sp"
+                android:background="@drawable/time_chip_background"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/detailRecipeDifficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💪 Difficulty: Easy"
+                android:textColor="#4CAF50"
+                android:textSize="13sp"
+                android:background="@drawable/difficulty_chip_background"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="6dp" />
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="16dp"
+            android:background="#DDDDDD" />
+
+        <!-- Ingredients Section -->
+        <TextView
+            android:id="@+id/ingredientsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🧂 Ingredients"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/detailRecipeIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:lineSpacingExtra="6dp"
+            android:text="• 2 bunches callaloo (or spinach)\n• 1 small onion, chopped\n• 1 tomato, diced\n• 1 scallion, chopped\n• 1 garlic clove, minced\n• 1 tbsp olive oil\n• 1/4 tsp black pepper\n• 1/2 tsp salt\n• 1/2 tsp thyme\n• 1 Scotch bonnet pepper (optional)\n• 1 cup coconut milk (optional for creaminess)\n• 1/4 cup carrots, sliced thin\n• 1 tsp butter for flavor"
+            android:textColor="#444444"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="12dp"
+            android:background="#DDDDDD" />
+
+        <!-- Instructions Section -->
+        <TextView
+            android:id="@+id/instructionsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👨‍🍳 Instructions"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/detailRecipeInstructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Wash the callaloo thoroughly and remove any tough stems.\n\n2. Heat olive oil in a large pan. Sauté onion, garlic, scallion, and tomato until soft and fragrant.\n\n3. Add callaloo, salt, pepper, thyme, and Scotch bonnet pepper. Mix well.\n\n4. Optionally, add coconut milk and carrots for a creamy, colorful flavor.\n\n5. Cover and cook on low heat for 8–10 minutes until tender and wilted.\n\n6. Add a teaspoon of butter and stir before serving.\n\n7. Serve hot with boiled dumplings, fried plantains, or steamed rice."
+            android:textColor="#444444"
+            android:textSize="15sp"
+            android:lineSpacingExtra="6dp"
+            android:gravity="start"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>
