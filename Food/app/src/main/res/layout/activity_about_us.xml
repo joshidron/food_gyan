@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_background"
+    android:padding="20dp"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="40dp"> <!-- 👈 Extra padding so last icons stay visible -->
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_about_us" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Us"
+                android:textColor="@color/colorPrimary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Member 1: Dron Joshi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/dron"
+                android:scaleType="centerCrop"
+                android:contentDescription="Dron Joshi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dron Joshi"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Frontend &amp; Backend Developer"
+                android:textColor="#666"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/instagram_dron"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_instagram"
+                    android:contentDescription="Instagram" />
+
+                <ImageView
+                    android:id="@+id/linkedin_dron"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_linkedin"
+                    android:contentDescription="LinkedIn" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Member 2: Naitik Joshi -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/naitik"
+                android:scaleType="centerCrop"
+                android:contentDescription="Naitik Joshi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Naitik Joshi"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="UI/UX Designer"
+                android:textColor="#666"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/instagram_naitik"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_instagram"
+                    android:contentDescription="Instagram" />
+
+                <ImageView
+                    android:id="@+id/linkedin_naitik"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_linkedin"
+                    android:contentDescription="LinkedIn" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Member 3: Yashvi Goswami -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:layout_marginBottom="50dp"> <!-- 👈 Ensures icons not cut off -->
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/yashvi"
+                android:scaleType="centerCrop"
+                android:contentDescription="Yashvi Goswami" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yashvi Goswami"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Content &amp; Visual Designer"
+                android:textColor="#666"
+                android:textSize="13sp"
+                android:layout_marginTop="4dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/instagram_yashvi"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/ic_instagram"
+                    android:contentDescription="Instagram" />
+
+                <ImageView
+                    android:id="@+id/linkedin_yashvi"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_linkedin"
+                    android:contentDescription="LinkedIn" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

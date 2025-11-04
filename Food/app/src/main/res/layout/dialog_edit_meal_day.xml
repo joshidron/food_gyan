@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Meals for Selected Day"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Breakfast:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/editBreakfast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter breakfast"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_bg"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lunch:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/editLunch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter lunch"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_bg"
+        android:layout_marginBottom="12dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dinner:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/editDinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter dinner"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_bg" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/instructionText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit all meals of this type:"
+        android:textSize="14sp"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/editMeal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the meal"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_bg" />
+
+</LinearLayout>

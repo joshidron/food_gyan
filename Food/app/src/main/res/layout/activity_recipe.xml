@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_recipe"
+            android:layout_marginEnd="12dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Recipe Finder"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <!-- Search Bar -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:boxBackgroundMode="outline"
+        app:boxCornerRadiusTopStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusBottomEnd="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/searchEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search recipes..."
+            android:maxLines="1" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Filter Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/spinner_background" />
+
+        <Spinner
+            android:id="@+id/difficultySpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/spinner_background" />
+
+    </LinearLayout>
+
+    <!-- Progress Indicator -->
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <!-- Recipes List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>
